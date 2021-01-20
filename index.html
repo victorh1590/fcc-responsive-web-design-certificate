@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tech Job Application Survey</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="We're looking for programmers!">
+  <meta name="keywords" content="Job, Tech, Application">
+  <meta name="author" content="Victor Hugo Faria">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/50216e6b20.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<main>
+  <header>
+    <h1 id="title">Tech Job Application</h1>
+    <p id="description">
+      We're looking for creative and capable minds to with us!
+      If you fit the description, fill the application below.
+    </p>
+  </header>
+  <section>
+    <form id="survey-form" action="#">
+      <fieldset>
+        <legend>Tell us who you are.</legend>
+        
+        <label id="name-label" for="name">Your name: </label><br>
+        <input 
+          id="name" 
+          type="text" 
+          name="name"
+          title="Please enter your name."
+          placeholder="John Doe"
+          pattern="^[a-z]"
+          required 
+        /><br>
+
+        <label id="email-label" for="email">Your email: </label><br>
+        <input 
+          id="email" 
+          type="email" 
+          name="email"
+          title="example@email.com" 
+          placeholder="example@email.com"
+          required 
+        /><br>
+
+        <label id="number-label" for="number">Your age: </label><br>
+        <input 
+          id="number" 
+          type="number" 
+          name="number"
+          min="10" max="80"
+          title="Please enter your age."
+          placeholder="30"
+          required
+        /><br>
+      </fieldset><br>
+      
+      <label for="dropdown">What's your specialty?</label>
+      <select id="dropdown" name="specialty">
+        <option value="front-end">Front-End</option>
+        <option value="back-end">Back-End</option>
+        <option value="full-stack">Full Stack</option>
+        <option value="ui-ux-design">UI/UX Design</option>
+        <option value="analytics">Analytics</option>
+      </select><br>
+
+      <p id="experience-description">How do you define yourself in terms of experience?<br>
+        <input type="radio" id="radio-junior" name="experience" value="junior">
+        <label for="radio-junior">Junior</label><br>
+        <input type="radio" id="radio-pro" name="experience" value="pro">
+        <label for="radio-junior">Pro</label><br>
+        <input type="radio" id="radio-senior" name="experience" value="senior">
+        <label for="radio-junior">Senior</label><br>
+        <input type="radio" id="other" name="experience" value="Other">
+        <label for="other">Other</label><br>
+      </p>
+
+      <p id="tech-description">Check the box if you have experience with this technology:<br>
+        <input type="checkbox" id="html" name="html" value="html">
+        <label for="radio-junior">HTML</label><br>
+        <input type="checkbox" id="css" name="css" value="css">
+        <label for="radio-junior">CSS</label><br>
+        <input type="checkbox" id="javascript" name="javascript" value="javascript">
+        <label for="radio-junior">Javascript</label><br>
+        <input type="checkbox" id="php" name="php" value="php">
+        <label for="other">PHP</label><br>
+        <input type="checkbox" id="python" name="python" value="python">
+        <label for="radio-junior">Python</label><br>
+        <input type="checkbox" id="react" name="react" value="react">
+        <label for="other">React</label><br>
+      </p>
+
+      <p>
+        <label for="your-description">Tell us something about you in 500 characters:</label><br>
+        <textarea 
+          id="your-description" 
+          name="your-description" 
+          rows="5" column="50" 
+          maxlength="500"
+          placeholder="Write something here."
+        ></textarea>
+      </p><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+</main>
+</body>
+</html> 
