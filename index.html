@@ -19,7 +19,7 @@
     <div class="header-text"> 
       <h1 id="title">Tech Job Application</h1>
       <p id="description">
-        We're looking for creative and capable minds to with us!
+        We're looking for creative and capable minds to work with us!
         If you fit the description, fill the application below.
       </p>
     </div>
@@ -62,53 +62,81 @@
         /><br>
       </fieldset><br>
       
-      <label for="dropdown">What's your specialty?</label>
-      <select id="dropdown" name="specialty">
-        <option value="front-end">Front-End</option>
-        <option value="back-end">Back-End</option>
-        <option value="full-stack">Full Stack</option>
-        <option value="ui-ux-design">UI/UX Design</option>
-        <option value="analytics">Analytics</option>
-      </select><br>
+      <fieldset class="field_container">
+        <legend>Now tell us what you can do!</legend>
 
-      <p id="experience-description">How do you define yourself in terms of experience?<br>
-        <input type="radio" id="radio-junior" name="experience" value="junior">
-        <label for="radio-junior">Junior</label><br>
-        <input type="radio" id="radio-pro" name="experience" value="pro">
-        <label for="radio-junior">Pro</label><br>
-        <input type="radio" id="radio-senior" name="experience" value="senior">
-        <label for="radio-junior">Senior</label><br>
-        <input type="radio" id="other" name="experience" value="Other">
-        <label for="other">Other</label><br>
-      </p>
+        <label for="dropdown">What's your specialty?</label>
+        <select id="dropdown" name="specialty">
+          <option value="front-end">Front-End</option>
+          <option value="back-end">Back-End</option>
+          <option value="full-stack">Full Stack</option>
+          <option value="ui-ux-design">UI/UX Design</option>
+          <option value="analytics">Analytics</option>
+        </select><br>
 
-      <p id="tech-description">Check the box if you have experience with this technology:<br>
-        <input type="checkbox" id="html" name="html" value="html">
-        <label for="radio-junior">HTML</label><br>
-        <input type="checkbox" id="css" name="css" value="css">
-        <label for="radio-junior">CSS</label><br>
-        <input type="checkbox" id="javascript" name="javascript" value="javascript">
-        <label for="radio-junior">Javascript</label><br>
-        <input type="checkbox" id="php" name="php" value="php">
-        <label for="other">PHP</label><br>
-        <input type="checkbox" id="python" name="python" value="python">
-        <label for="radio-junior">Python</label><br>
-        <input type="checkbox" id="react" name="react" value="react">
-        <label for="other">React</label><br>
-      </p>
+        <p id="experience-description">How do you define yourself in terms of experience?<br>
+          <br>
+          <label class="checkbox_container" for="radio-junior">Junior
+            <input type="radio" id="radio-junior" name="experience" value="junior">
+            <span class="radio_checkmark"></span>
+          </label><br>
+          <label class="checkbox_container" for="radio-pro">Pro
+            <input type="radio" id="radio-pro" name="experience" value="pro">
+            <span class="radio_checkmark"></span>
+          </label><br>
+          <label class="checkbox_container" for="radio-senior">Senior
+            <input type="radio" id="radio-senior" name="experience" value="senior">
+            <span class="radio_checkmark"></span>
+          </label><br>
+          <label class="checkbox_container" for="other">Other
+            <input type="radio" id="other" name="experience" value="Other">
+            <span class="radio_checkmark"></span>
+          </label><br>
+        </p>
 
-      <p>
-        <label for="your-description">Tell us something about you in 500 characters:</label><br>
-        <textarea 
-          id="your-description" 
-          name="your-description" 
-          rows="5" column="50" 
-          maxlength="500"
-          placeholder="Write something here."
-        ></textarea>
-      </p><br>
+        <hr>
+        <p id="tech-description">Check the box if you have experience with this technology:<br>
+          <br>
+          <label class="checkbox_container" for="html">HTML
+            <input type="checkbox" id="html" name="html" value="html">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="checkbox_container" for="css">CSS
+            <input type="checkbox" id="css" name="css" value="css">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="checkbox_container" for="javascript">Javascript
+            <input type="checkbox" id="javascript" name="javascript" value="javascript">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="checkbox_container" for="php">PHP
+            <input type="checkbox" id="php" name="php" value="php">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="checkbox_container" for="python">Python
+            <input type="checkbox" id="python" name="python" value="python">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="checkbox_container" for="react">React
+            <input type="checkbox" id="react" name="react" value="react">
+            <span class="checkmark"></span>
+          </label><br>
+        </p>
 
-      <input type="submit" value="Submit">
+        <p>
+          <label for="your-description">Tell us something about you in 500 characters:</label><br>
+          <br>
+          <textarea 
+            id="your-description" 
+            name="your-description" 
+            rows="5" column="50" 
+            maxlength="500"
+            placeholder="Write something here."
+          ></textarea>
+        </p><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+
     </form>
   </section>
 </main>
