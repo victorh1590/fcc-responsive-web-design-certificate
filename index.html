@@ -36,7 +36,7 @@
           name="name"
           title="Please enter your name."
           placeholder="John Doe"
-          pattern="^[a-z]"
+          pattern="[A-z]*"
           required 
         /><br>
 
@@ -55,9 +55,10 @@
           id="number" 
           type="number" 
           name="number"
-          min="10" max="80"
+          min="16" max="99"
           title="Please enter your age."
           placeholder="30"
+          pattern="[0-9]*"
           required
         /><br>
       </fieldset><br>
@@ -134,7 +135,9 @@
             placeholder="Write something here."
           ></textarea>
         </p><br>
-        <input type="submit" value="Submit">
+        <div class="button_container">
+          <input type="submit" id="submit" value="SUBMIT">
+        </div>
       </fieldset>
 
     </form>

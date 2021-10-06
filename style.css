@@ -25,20 +25,6 @@ body {
 
 }
 
-/* main {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-
-  position: fixed;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: linear-gradient(rgba(40, 42, 54, 0.5), rgba(68, 71, 90, 1)), url('https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1600&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=10&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=2400');
-} */
-
 main {
   width: 100%;
   height: auto;
@@ -85,7 +71,7 @@ header {
 
 section {
   box-sizing: border-box;
-  min-width: 500px;
+  min-width: 300px;
   max-width: 100%;
 
   margin: auto;
@@ -108,11 +94,51 @@ fieldset {
   padding: 20px;
 
   color: #50fa7b;
-  font-family: 'Yusei Magic';
+  font-family: 'Yusei Magic', sans-serif;
 }
 
 fieldset input {
   width: 98%;
+}
+
+textarea {
+  width: 90%;
+  min-width: 200px;
+  resize: none;
+}
+
+#submit {
+  width: 100px;
+  height: 36px;
+  margin: 0;
+  display: block;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  background-color: #9759ee;
+  font-family: monospace, sans-serif;
+  font-weight: bolder;
+  color: #f8f8f2;
+
+  line-height: 18px;
+  border-radius: 8px;
+  border: 0;
+}
+
+#submit:hover {
+  opacity: 90%;
+}
+
+#submit:active {
+  background-color: #ff8400;
+}
+
+.button_container { 
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .checkbox_container {
