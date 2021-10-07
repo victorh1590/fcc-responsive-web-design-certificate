@@ -111,12 +111,13 @@ section {
 #img-div {
   box-sizing: border-box;
   position: relative;
-  margin: 10px;
+  /* margin: 10px; */
+  padding: 10px;
   width: auto;
   height: auto;
   max-width: 100%;
   border: 1px solid #bd9b8f;
-  background-color: #bd9b8f;
+  background-color: white;
 }
 
 #img-div img {
@@ -191,5 +192,20 @@ section {
   font-family: 'Playfair Display', serif;
   font-size: 0.8em;
   color: #321911;
+}
+
+#img-caption {
+  display: block;
+  background-color: transparent;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #321911;
+}
+
+#tribute-info {
+  display: block;
+  text-align: center;
 }
 

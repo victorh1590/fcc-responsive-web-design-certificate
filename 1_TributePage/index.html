@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tech Job Application Survey</title>
+  <title>Hayao Miyazaki's Tribute Page</title>
   <meta charset="UTF-8">
-  <meta name="description" content="We're looking for programmers!">
-  <meta name="keywords" content="Job, Tech, Application">
+  <meta name="description" content="A great mind!">
+  <meta name="keywords" content="Art, Film, Biography">
   <meta name="author" content="Victor H F">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
 </head>
 <body>
-<main>
+<main id="main">
   <header>
     <div class="header-text"> 
       <h1 id="title">Hayao Miyazaki</h1>
@@ -29,7 +29,8 @@
   <section>
     <div class="text_container">
       <div id="img-div">
-        <img src="https://artesetra.com.br/wp-content/uploads/2021/01/20210106_studio_ghibli_hayao_miyazaki-800x445.jpg"/>
+        <img id="image" src="https://artesetra.com.br/wp-content/uploads/2021/01/20210106_studio_ghibli_hayao_miyazaki-800x445.jpg"/>
+        <div id="img-caption">Hayao Miyazaki</div>
       </div>
       <article class="biography">
         <h1 class="biography-title">Time Line of Miyasaki's life and work: </h1>
@@ -74,8 +75,14 @@
             a friend of the director gave an interview to a japanese TV program explaining
             that Miyasaki wants to finish the project as a gift for his grandson.<br></li>
         </ul>
-
+        <span id=tribute-info>
+          To read more about Miyazaki's life and work, click 
+          <a id="tribute-link" 
+          target="_blank"
+          href="https://en.wikipedia.org/wiki/Hayao_Miyazaki">HERE</a>.
+        </span>
       </article>
+      
       <div class="citation">
         <div id="img-div2">
           <img id="citation-img" src="https://i.imgur.com/Y5cgbNv.jpeg"/>
@@ -84,7 +91,9 @@
           I would like to make a film to tell children 'it's good to be alive.'         
         </q><br>
         <span class="name"> - Hayao Miyazaki</span>
-        <a id="credits" href="https://www.vecteezy.com/free-vector/old-airplane">Old Airplane Vectors by Vecteezy</a>
+        <a id="credits" 
+        target="_blank"
+        href="https://www.vecteezy.com/free-vector/old-airplane">Old Airplane Vectors by Vecteezy</a>
       </div>
     </div>
   </section>
