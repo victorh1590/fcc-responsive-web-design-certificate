@@ -3,7 +3,7 @@
 .background_color2 { background-color: #f8f8f2; }
 .background_color3 { background-color: #4caf50; }
 .background_color4 { background-color: #42a5f5; }
-.background_color5 { background-color:#80e27e; }
+.background_color5 { background-color: #80e27e; }
 .background_color6 { background-color: #80d6ff; }
 .background_color7 { background-color: #087f23; }
 .background_color8 { background-color: #0077c2; }
@@ -14,7 +14,7 @@
 .highlight_color1 { background-color: #6272a4; }
 .highlight_color2 { background-color: #8be9fd; }
 .highlight_color3 { background-color: #50fa7b; }
-.highlight_color4 { background-color :#ffb86c; }
+.highlight_color4 { background-color: #ffb86c; }
 .highlight_color5 { background-color: #ff79c6; }
 .highlight_color6 { background-color: #bd93f9; }
 .highlight_color7 { background-color: #ff5555; }
@@ -31,7 +31,6 @@ body {
   height: auto;
   margin: 0;
   padding: 0;
-
 }
 
 main {
@@ -51,14 +50,12 @@ header {
 
   text-align: center;
 
-
   background: rgb(128,214,255);
   background-image: url('https://i.imgur.com/I0eHgtj.png'), linear-gradient(0deg, rgba(128,214,255,1) 0%, rgba(66,165,245,1) 28%, rgba(0,119,194,1) 100%);
   background-repeat: no-repeat;
   background-position: 50% 90%;
 
   text-align: center;
-
   
   display: flex;
   align-items: center;
