@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Technical Documentation Page</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Javascript Array Description">
+  <meta name="keywords" content="Javascript, Array, JS">
+  <meta name="author" content="Victor H F">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/50216e6b20.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>Javascript - Arrays</header>
+    <a class="nav-link" href="#Array">Array</a>
+    <a class="nav-link" href="#Description">Description</a>
+    <a class="nav-link" href="#Constructor">Constructor</a>
+    <a class="nav-link" href="#Static_Properties">Static Properties</a>
+    <a class="nav-link" href="#Static_Methods">Static Methods</a>
+    <a class="nav-link" href="#Instance_Properties">Instance Properties</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Array">
+      <header>Array</header>
+      <p>The <code>Array</code> object, as with arrays in other programming languages, 
+        enables storing a collection of multiple items under a single variable name, 
+        and has members for performing common array operations.</p>
+    </section>
+
+    <section class="main-section" id="Description">
+      <header>Description</header>
+      <p>In JavaScript, arrays aren't primitives but are instead <code>Array</code> 
+        objects with the following core characteristics:</p>
+      <ul>
+        <li>
+          JavaScript arrays are resizable and can contain a mix of different data types. 
+          (When those characteristics are undesirable, use typed arrays instead.)
+        </li>
+        <li>
+          JavaScript arrays are not associative arrays and so, 
+          array elements cannot be accessed using strings as indexes, 
+          but must be accessed using integers as indexes.
+        </li>
+        <li>
+          JavaScript arrays are zero-indexed: the first element of an array is at index <code>0</code>, 
+          the second is at index <code>1</code>, 
+          and so on — and the last element is at the value of the array's length property minus <code>1</code>.
+        </li>
+        <li>
+          JavaScript array-copy operations create shallow copies. 
+          (All standard built-in copy operations with any JavaScript 
+          objects create shallow copies, rather than deep copies).
+        </li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Constructor">
+      <header>Constructor</header>
+      <ul>
+        <li>
+          <p class="item-title">Array()</p>
+          <p class="item-description">Creates a new <code>Array</code> object.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Static_Properties">
+      <header>Static Properties</header>
+      <ul>
+        <li>
+          <p class="item-title">get Array[@@species]</p>
+          <p class="item-description">Returns the <code>Array</code> constructor.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Static_Methods">
+      <header>Static Methods</header>
+      <ul>
+        <li>
+          <p class="item-title">Array.from()</p>
+          <p class="item-description">
+            Creates a new <code>Array</code> instance 
+            from an array-like object or iterable object.
+          </p>
+        </li>
+        <li>
+          <p class="item-title">Array.isArray()</p>
+          <p class="item-description">
+            Returns <code>true</code> if the argument is an array, or <code>false</code> otherwise.
+          </p>
+        </li>
+        <li>
+          <p class="item-title">Array.of()</p>
+          <p class="item-description">
+            Creates a new <code>Array</code> instance with a variable number of arguments, 
+            regardless of number or type of the arguments.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Instance_Properties">
+      <header>Instance Properties</header>
+      <ul>
+        <li>
+          <p class="item-title">Array.prototype.length</p>
+          <p class="item-description">
+            Reflects the number of elements in an array.
+          </p>
+        </li>
+        <li>
+          <p class="item-title">Array.prototype[@@unscopables]</p>
+          <p class="item-description">
+            Contains property names that were not included in the 
+            ECMAScript standard prior to the ES2015 version and that 
+            are ignored for with statement-binding purposes.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html> 
